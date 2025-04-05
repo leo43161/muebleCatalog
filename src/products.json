@@ -1,0 +1,39 @@
+[
+    {
+      "id": "1",
+      "name": "Armario de Ropa Minimalista",
+      "category": "Habitación",
+      "price": 870,
+      "image": "/img/armario-minimalista.jpg",
+      "colors": ["Blanco", "Gris", "Roble"],
+      "description": "Armario moderno con puertas corredizas y amplio espacio interior, ideal para mantener tu ropa organizada con estilo."
+    },
+    {
+      "id": "2",
+      "name": "Mesa de Noche Nórdica",
+      "category": "Nordica",
+      "price": 180,
+      "image": "/img/mesa-noche-nordica.jpg",
+      "colors": ["Natural", "Blanco"],
+      "description": "Mesa de noche con estilo escandinavo, perfecta para espacios minimalistas."
+    },
+    {
+      "id": "3",
+      "name": "Cómoda de Madera Clara",
+      "category": "Habitación",
+      "price": 620,
+      "image": "/img/comoda-madera.jpg",
+      "colors": ["Madera Clara", "Negro"],
+      "description": "Cómoda espaciosa con cajones amplios, ideal para almacenar ropa y accesorios."
+    },
+    {
+      "id": "4",
+      "name": "Espejo de Pie Elegante",
+      "category": "Decoracion",
+      "price": 240,
+      "image": "/img/espejo-pie.jpg",
+      "colors": ["Dorado", "Negro", "Madera Natural"],
+      "description": "Espejo de cuerpo entero con marco decorativo que aporta estilo a cualquier habitación."
+    }
+  ]
+  
