@@ -5,7 +5,12 @@ import ProductDetailClient from '@/components/ProductDetailClient'; // Importa e
 
 // Props 'params' es inyectado automáticamente por Next.js para rutas dinámicas
 export default async function ProductDetailPage({ params }) {
-  const productId = params.id; // Obtiene el ID de la URL
+  // ----- CORRECCIÓN -----
+  // No necesitas 'await' aquí, params.id es un string directamente.
+  const { id: productId } = await params;
+  // ----------------------
+
+  // Aquí sí necesitas 'await' porque getProductById es una función asíncrona
   const product = await getProductById(productId); // Busca el producto
 
   // Si el producto no se encuentra, muestra la página 404 de Next.js
@@ -18,8 +23,11 @@ export default async function ProductDetailPage({ params }) {
 }
 
 // Opcional: Generar Metadata Dinámica (SEO)
+// Esta función ya estaba usando params.id correctamente como argumento.
 export async function generateMetadata({ params }) {
-  const product = await getProductById(params.id);
+  const { id: productId } = await params;
+
+  const product = await getProductById(productId); // Espera el resultado de la función async
   if (!product) {
     return { title: 'Producto no encontrado' };
   }

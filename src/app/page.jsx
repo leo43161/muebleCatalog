@@ -1,7 +1,9 @@
 // app/page.jsx
 import { getProducts, getCategories } from '@/lib/data'; // Asegúrate que la ruta sea correcta
+import Categories from '@/categories.json'; // Importa el componente cliente
+import Products from '@/products.json'; // Importa el componente cliente
 import ProductList from '@/components/ProductList'; // Importa el componente cliente
-
+console.log(Categories);
 // Esta es una función async porque es un Server Component que hace fetch de datos
 export default async function HomePage() {
   // Llama a las funciones para obtener los datos en el servidor
